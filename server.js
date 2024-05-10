@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + '/src/web2.html');
+  res.send('Goodbye from Cloud Run!');
 });
 
 const PORT = process.env.PORT || 8080;
